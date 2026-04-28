@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ks-daemon/",
+    "crates/ks-ipc/",
+    "crates/ks-llm/",
+    "crates/ks-quiz/",
+    "crates/ks-scheduler/",
+    "crates/ks-store/",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2026"
+authors = ["Hoshiimo0"]
+license = "MIT"
