@@ -1,6 +1,14 @@
 [package]
 name = "ks-quiz"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "ks_quiz"
+path = "src/lib.rs"
 
 [dependencies]
+ks-ipc     = { path = "../ks-ipc" }
+anyhow.workspace    = true
+serde.workspace     = true
+serde_json.workspace = true
