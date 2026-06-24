@@ -1,6 +1,16 @@
 [package]
 name = "ks-llm"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "ks_llm"
+path = "src/lib.rs"
 
 [dependencies]
+ks-ipc     = { path = "../ks-ipc" }
+tokio.workspace      = true
+async-trait.workspace = true
+anyhow.workspace     = true
+serde.workspace      = true
+serde_json.workspace = true
