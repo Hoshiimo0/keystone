@@ -1,6 +1,21 @@
 [package]
 name = "ks-daemon"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "ks-daemon"
+path = "src/main.rs"
 
 [dependencies]
+ks-ipc = { path = "../ks-ipc" }
+ks-scheduler = { path = "../ks-scheduler" }
+ks-store = { path = "../ks-store" }
+ks-llm = { path = "../ks-llm" }
+ks-quiz = { path = "../ks-quiz" }
+
+tokio.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
